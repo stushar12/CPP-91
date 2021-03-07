@@ -37,7 +37,7 @@ Node* Insert(Node* root,int data)
 
 
 
-vector<int> verticalOrder_traversal(Node *root)
+vector<int> top_view(Node *root)
 {
         map<int,vector<int>> m;
         queue<pair<Node*,int>> q;
@@ -84,7 +84,7 @@ int main()
 
 	vector<int>v;
 	int horizontal_distance=0;
-	v=verticalOrder_traversal(root);
+	v=top_view(root);
 
 	for(auto itr:v)
 		cout<<itr<<" ";
